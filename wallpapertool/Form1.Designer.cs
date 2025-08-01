@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button4 = new System.Windows.Forms.Button();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,9 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.webBrowser2 = new System.Windows.Forms.WebBrowser();
-            this.label5 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +61,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.splitContainer1.Panel1.Controls.Add(this.button5);
             this.splitContainer1.Panel1.Controls.Add(this.button4);
             this.splitContainer1.Panel1.Controls.Add(this.linkLabel2);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
@@ -81,6 +83,39 @@
             this.splitContainer1.Size = new System.Drawing.Size(1577, 792);
             this.splitContainer1.SplitterDistance = 327;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(24, 678);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(180, 46);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "自动顺序命名图片";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel2.Location = new System.Drawing.Point(12, 165);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(171, 31);
+            this.linkLabel2.TabIndex = 12;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "打开 Lewd TV";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(16, 394);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(208, 96);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "注：你可以在文件夹属性\r\n 自定义 - 优化文件夹\r\n把文件选成图片类型\r\n就不需要每次右键了";
             // 
             // label4
             // 
@@ -196,38 +231,15 @@
             this.webBrowser2.TabIndex = 0;
             this.webBrowser2.Url = new System.Uri("", System.UriKind.Relative);
             // 
-            // label5
+            // button5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(16, 394);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 96);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "注：你可以在文件夹属性\r\n 自定义 - 优化文件夹\r\n把文件选成图片类型\r\n就不需要每次右键了";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.linkLabel2.Location = new System.Drawing.Point(12, 165);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(171, 31);
-            this.linkLabel2.TabIndex = 12;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "打开 Lewd TV";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(24, 678);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(275, 56);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "自动顺序命名图片";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.button5.Location = new System.Drawing.Point(24, 730);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(180, 46);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "资源管理器中打开";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -266,6 +278,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -51,10 +52,6 @@ namespace wallpapertool
             webBrowser2.GoForward();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //对 webBrowser2 进行点击 然后右键 - v - r
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -112,6 +109,13 @@ namespace wallpapertool
             {
                 MessageBox.Show("启动失败：" + ex.Message);
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            String filepath = textBox1.Text;
+
+            Process.Start("explorer.exe", filepath);
         }
     }
 }
